@@ -11,7 +11,8 @@
 	<groupId>com.example</groupId>
 	<artifactId>health-fusion-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>health-fusion-api</name>
+    <packaging>pom</packaging>
+    <name>health-fusion-api</name>
 	<description>integrating both HAPI FHIR and EHRbase into a single unified healthcare API solution.</description>
 	<url/>
 	<licenses>
@@ -20,7 +21,12 @@
 	<developers>
 		<developer/>
 	</developers>
-	<scm>
+    <modules>
+        <module>ehrbase-module</module>
+		<module>fhir-module</module>
+		<module>health-fusion-web</module>
+	</modules>
+    <scm>
 		<connection/>
 		<developerConnection/>
 		<tag/>
